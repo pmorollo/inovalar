@@ -2,77 +2,182 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pmorollo.shop/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://pmorollo.shop/artigos.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://pmorollo.shop/sobre.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/contato.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/politica-privacidade.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/termos-de-uso.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://pmorollo.shop/artigos/decoracao-banheiro-pequeno.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://pmorollo.shop/artigos/decoracao-sala-pequena.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/artigos/tirar-mofo-parede.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/artigos/limpar-sofa-a-seco.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/artigos/como-cuidar-suculentas.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/artigos/plantas-apartamento.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/artigos/organizar-guarda-roupa.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/artigos/quarto-casal-simples.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/artigos/cozinha-planejada-pequena.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/artigos/cores-ampliar-ambiente.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pmorollo.shop/artigos/misturinha-limpar-banheiro.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/air-fryer-gasta-energia.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/ar-condicionado-inverter-vale-a-pena.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/casa-inteligente-por-onde-comecar.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/como-decorar-apartamento-pequeno.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/decoracao-cozinha-simples-barata.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/escolher-robo-aspirador.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/geladeira-inverter-economiza-energia.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/horta-apartamento.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/iluminacao-sala-estar.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/lampada-inteligente-como-funciona.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/lava-e-seca-ou-lavadora.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/limpar-box-vidro.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/limpar-colchao.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/limpar-rejunte.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/organizar-banheiro-pequeno.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/organizar-casa-pequena.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/organizar-cozinha-pequena.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/organizar-despensa.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pmorollo.shop/artigos/plantas-faceis-de-cuidar.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>

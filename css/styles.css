@@ -21,6 +21,19 @@ ul {
     list-style: none;
 }
 
+.article-body ul,
+.legal-content ul {
+    list-style: disc;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgba(39, 174, 96, 0.45);
+    outline-offset: 3px;
+}
+
 /* Layout Container */
 .container {
     max-width: 1200px;
@@ -45,13 +58,30 @@ ul {
 }
 
 .logo a {
-    font-size: 28px;
-    font-weight: 700;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    white-space: nowrap;
     color: #2c3e50;
 }
 
-.logo span {
+.logo-name {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo-name > span {
     color: #27ae60; /* Verde Planta/Casa */
+}
+
+.logo-tagline {
+    margin-top: 5px;
+    color: #5f6b73;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    line-height: 1.2;
 }
 
 .main-nav ul {
@@ -71,60 +101,24 @@ ul {
     color: #27ae60;
 }
 
-.search-bar {
-    display: flex;
-}
-
-.search-bar input {
-    padding: 8px 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px 0 0 4px;
-    outline: none;
-}
-
-.search-bar button {
-    padding: 8px 15px;
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-}
-
-/* Módulos de Anúncio (AdSense) */
-.ad-wrapper {
-    margin: 20px auto;
+.home-intro {
+    padding-top: 52px;
     text-align: center;
 }
 
-.ad-placeholder {
-    background-color: #eaeaea;
-    border: 1px dashed #bbb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-    font-size: 14px;
-    margin-bottom: 20px;
+.home-intro h1 {
+    max-width: 850px;
+    margin: 0 auto 14px;
+    color: #2c3e50;
+    font-size: clamp(30px, 5vw, 46px);
+    line-height: 1.15;
 }
 
-.banner-top {
-    width: 100%;
-    max-width: 728px;
-    height: 90px;
+.home-intro p {
+    max-width: 760px;
     margin: 0 auto;
-}
-
-.square-ad {
-    width: 100%;
-    height: 250px;
-}
-
-.sticky-ad {
-    width: 100%;
-    height: 600px; /* Skyscraper */
-    position: sticky;
-    top: 100px;
+    color: #5f6b73;
+    font-size: 18px;
 }
 
 /* Área de Conteúdo */
@@ -185,6 +179,7 @@ ul {
 }
 
 .cat-decoracao { background-color: #e67e22; }
+.cat-organizacao { background-color: #b45309; }
 .cat-limpeza { background-color: #3498db; }
 .cat-plantas { background-color: #2ecc71; }
 .cat-eletro { background-color: #8e44ad; }
@@ -203,6 +198,68 @@ ul {
 .post-content p {
     font-size: 14px;
     color: #666;
+}
+
+.catalog-page {
+    margin-top: 48px;
+    margin-bottom: 70px;
+}
+
+.catalog-intro {
+    max-width: 820px;
+    margin: 0 auto 52px;
+    text-align: center;
+}
+
+.catalog-intro h1 {
+    color: #2c3e50;
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+
+.catalog-intro p {
+    color: #5f6b73;
+    font-size: 18px;
+}
+
+.category-section {
+    scroll-margin-top: 110px;
+    margin-bottom: 64px;
+}
+
+.category-section > h2 {
+    color: #2c3e50;
+    display: inline-block;
+    font-size: 26px;
+    margin-bottom: 26px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #27ae60;
+}
+
+img.post-image {
+    display: block;
+    height: 180px;
+    object-fit: cover;
+}
+
+.all-posts-link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.all-posts-link a {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: #2c3e50;
+    color: #fff;
+    font-weight: 700;
+}
+
+.all-posts-link a:hover,
+.all-posts-link a:focus-visible {
+    background: #1f6f43;
 }
 
 /* Sidebar */
@@ -281,5 +338,53 @@ ul {
         height: auto;
         padding: 20px 0;
         gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .home-intro {
+        padding-top: 36px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-links a {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+    }
+
+    .featured-image {
+        height: 240px !important;
+        object-fit: cover;
+    }
+
+    .catalog-page {
+        margin-top: 34px;
+    }
+
+    .category-section {
+        scroll-margin-top: 170px;
     }
 }
