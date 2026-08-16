@@ -1,6 +1,6 @@
 # Plano de trabalho — InovaLar
 
-Atualizado em 15 de agosto de 2026.
+Atualizado em 16 de agosto de 2026.
 
 ## Objetivo do projeto
 
@@ -22,9 +22,9 @@ Validar se o InovaLar consegue conquistar tráfego orgânico recorrente com cont
 |---|---|---|
 | 1. Segurança e confiança | Remover receitas arriscadas, promessas absolutas e informações institucionais incorretas | Concluída nesta revisão |
 | 2. Funcionamento e base técnica | Corrigir títulos inconsistentes, busca sem função, hierarquia de títulos, links e responsividade | Concluída nesta revisão |
-| 3. Qualidade dos artigos existentes | Aprofundar os textos, revisar intenção de busca e incluir links internos | Concluída na cópia de trabalho |
-| 4. Expansão para 30 artigos | Produzir dezenove novos artigos com pauta, fontes, revisão, imagens e interligação | Concluída na cópia de trabalho |
-| 5. Publicação e medição | Corrigir HTTPS, publicar, enviar sitemap no Search Console e medir consultas/páginas | Bloqueada pela configuração do certificado e pela autorização de deploy |
+| 3. Qualidade dos artigos existentes | Aprofundar os textos, revisar intenção de busca e incluir links internos | Concluída e publicada |
+| 4. Expansão para 30 artigos | Produzir dezenove novos artigos com pauta, fontes, revisão, imagens e interligação | Concluída e publicada |
+| 5. Publicação e medição | Corrigir HTTPS, publicar, enviar sitemap no Search Console e medir consultas/páginas | Em andamento: HTTPS e publicação concluídos; Search Console e medição pendentes |
 | 6. Otimização | Atualizar títulos, introduções e seções conforme consultas e desempenho observados | Mensal, após dados suficientes |
 | 7. Decisão sobre monetização | Avaliar anúncios e afiliados sem prejudicar confiança ou experiência | Somente após o período de teste |
 
@@ -50,60 +50,60 @@ Esta é uma seleção inicial de termos com intenção clara e recorrente no nic
 
 | Nº | Palavra-chave principal | Título recomendado | Estado |
 |---:|---|---|---|
-| 1 | decoração de sala pequena | Decoração de sala pequena: 7 ideias para ampliar o espaço | Pronto para publicação |
-| 2 | quarto de casal simples e bonito | Quarto de casal simples e bonito: ideias práticas e econômicas | Pronto para publicação |
-| 3 | cozinha planejada pequena | Cozinha planejada pequena: erros a evitar no projeto | Pronto para publicação |
-| 4 | cores para ambientes pequenos | Cores de parede para ambientes pequenos: como escolher | Pronto para publicação |
-| 5 | decoração de banheiro pequeno | Decoração de banheiro pequeno: ideias para aproveitar o espaço | Pronto para publicação |
-| 6 | como decorar apartamento pequeno | Como decorar apartamento pequeno sem sobrecarregar os ambientes | Pronto para publicação |
-| 7 | decoração de cozinha simples e barata | Decoração de cozinha simples e barata: ideias que funcionam | Pronto para publicação |
-| 8 | iluminação para sala de estar | Iluminação para sala de estar: como combinar luz geral e pontos de apoio | Pronto para publicação |
+| 1 | decoração de sala pequena | Decoração de sala pequena: 7 ideias para ampliar o espaço | Publicado |
+| 2 | quarto de casal simples e bonito | Quarto de casal simples e bonito: ideias práticas e econômicas | Publicado |
+| 3 | cozinha planejada pequena | Cozinha planejada pequena: erros a evitar no projeto | Publicado |
+| 4 | cores para ambientes pequenos | Cores de parede para ambientes pequenos: como escolher | Publicado |
+| 5 | decoração de banheiro pequeno | Decoração de banheiro pequeno: ideias para aproveitar o espaço | Publicado |
+| 6 | como decorar apartamento pequeno | Como decorar apartamento pequeno sem sobrecarregar os ambientes | Publicado |
+| 7 | decoração de cozinha simples e barata | Decoração de cozinha simples e barata: ideias que funcionam | Publicado |
+| 8 | iluminação para sala de estar | Iluminação para sala de estar: como combinar luz geral e pontos de apoio | Publicado |
 
 ### Organização — 5 artigos
 
 | Nº | Palavra-chave principal | Título recomendado | Estado |
 |---:|---|---|---|
-| 9 | como organizar guarda-roupa pequeno | Como organizar guarda-roupa pequeno e aproveitar melhor o espaço | Pronto para publicação |
-| 10 | como organizar cozinha pequena | Como organizar cozinha pequena: armários, bancada e utensílios | Pronto para publicação |
-| 11 | como organizar banheiro pequeno | Como organizar banheiro pequeno sem acumular produtos | Pronto para publicação |
-| 12 | como organizar casa pequena | Como organizar casa pequena: um método simples por ambientes | Pronto para publicação |
-| 13 | como organizar despensa | Como organizar despensa: categorias, validade e reposição | Pronto para publicação |
+| 9 | como organizar guarda-roupa pequeno | Como organizar guarda-roupa pequeno e aproveitar melhor o espaço | Publicado |
+| 10 | como organizar cozinha pequena | Como organizar cozinha pequena: armários, bancada e utensílios | Publicado |
+| 11 | como organizar banheiro pequeno | Como organizar banheiro pequeno sem acumular produtos | Publicado |
+| 12 | como organizar casa pequena | Como organizar casa pequena: um método simples por ambientes | Publicado |
+| 13 | como organizar despensa | Como organizar despensa: categorias, validade e reposição | Publicado |
 
 ### Limpeza e conservação — 6 artigos
 
 | Nº | Palavra-chave principal | Título recomendado | Estado |
 |---:|---|---|---|
-| 14 | como tirar mofo da parede | Como tirar mofo da parede com segurança e evitar que volte | Pronto para publicação |
-| 15 | como limpar sofá | Como limpar sofá em casa sem danificar o tecido | Pronto para publicação |
-| 16 | como limpar banheiro e azulejo | Como limpar banheiro e azulejo sem danificar as superfícies | Pronto para publicação |
-| 17 | como limpar colchão | Como limpar colchão em casa e evitar excesso de umidade | Pronto para publicação |
-| 18 | como limpar box de vidro | Como limpar box de vidro e reduzir manchas de água e sabão | Pronto para publicação |
-| 19 | como limpar rejunte | Como limpar rejunte sem danificar o revestimento | Pronto para publicação |
+| 14 | como tirar mofo da parede | Como tirar mofo da parede com segurança e evitar que volte | Publicado |
+| 15 | como limpar sofá | Como limpar sofá em casa sem danificar o tecido | Publicado |
+| 16 | como limpar banheiro e azulejo | Como limpar banheiro e azulejo sem danificar as superfícies | Publicado |
+| 17 | como limpar colchão | Como limpar colchão em casa e evitar excesso de umidade | Publicado |
+| 18 | como limpar box de vidro | Como limpar box de vidro e reduzir manchas de água e sabão | Publicado |
+| 19 | como limpar rejunte | Como limpar rejunte sem danificar o revestimento | Publicado |
 
 ### Plantas e jardim — 4 artigos
 
 | Nº | Palavra-chave principal | Título recomendado | Estado |
 |---:|---|---|---|
-| 20 | como cuidar de suculentas | Como cuidar de suculentas: rega, luz e substrato | Pronto para publicação |
-| 21 | plantas para apartamento com pouca luz | Plantas para apartamento com pouca luz: 5 espécies | Pronto para publicação |
-| 22 | plantas fáceis de cuidar | Plantas fáceis de cuidar: espécies para quem está começando | Pronto para publicação |
-| 23 | horta em apartamento | Horta em apartamento: como escolher local, vasos e temperos | Pronto para publicação |
+| 20 | como cuidar de suculentas | Como cuidar de suculentas: rega, luz e substrato | Publicado |
+| 21 | plantas para apartamento com pouca luz | Plantas para apartamento com pouca luz: 5 espécies | Publicado |
+| 22 | plantas fáceis de cuidar | Plantas fáceis de cuidar: espécies para quem está começando | Publicado |
+| 23 | horta em apartamento | Horta em apartamento: como escolher local, vasos e temperos | Publicado |
 
 ### Eletros e casa inteligente — 7 artigos
 
 | Nº | Palavra-chave principal | Título recomendado | Estado |
 |---:|---|---|---|
-| 24 | air fryer gasta muita energia | Air fryer gasta muita energia? Veja como calcular o consumo | Pronto para publicação |
-| 25 | como escolher robô aspirador | Como escolher robô aspirador para casa ou apartamento | Pronto para publicação |
-| 26 | ar-condicionado inverter vale a pena | Ar-condicionado inverter vale a pena? Consumo, vantagens e limites | Pronto para publicação |
-| 27 | lava e seca ou lavadora | Lava e seca ou lavadora comum: qual faz sentido para a sua rotina? | Pronto para publicação |
-| 28 | geladeira inverter economiza energia | Geladeira inverter economiza energia? Entenda antes de escolher | Pronto para publicação |
-| 29 | casa inteligente por onde começar | Casa inteligente: por onde começar sem gastar muito | Pronto para publicação |
-| 30 | lâmpada inteligente como funciona | Lâmpada inteligente: como funciona e o que observar antes de comprar | Pronto para publicação |
+| 24 | air fryer gasta muita energia | Air fryer gasta muita energia? Veja como calcular o consumo | Publicado |
+| 25 | como escolher robô aspirador | Como escolher robô aspirador para casa ou apartamento | Publicado |
+| 26 | ar-condicionado inverter vale a pena | Ar-condicionado inverter vale a pena? Consumo, vantagens e limites | Publicado |
+| 27 | lava e seca ou lavadora | Lava e seca ou lavadora comum: qual faz sentido para a sua rotina? | Publicado |
+| 28 | geladeira inverter economiza energia | Geladeira inverter economiza energia? Entenda antes de escolher | Publicado |
+| 29 | casa inteligente por onde começar | Casa inteligente: por onde começar sem gastar muito | Publicado |
+| 30 | lâmpada inteligente como funciona | Lâmpada inteligente: como funciona e o que observar antes de comprar | Publicado |
 
 ## Cadência depois do conjunto inicial
 
-Os 30 artigos iniciais estão prontos na cópia de trabalho. Depois da correção do HTTPS e da publicação, a meta operacional volta ao ritmo de dois artigos por semana. Esse ritmo é uma previsão de trabalho, não uma garantia de indexação pelo Google.
+Os 30 artigos iniciais estão publicados desde 16 de agosto de 2026. A meta operacional volta agora ao ritmo de dois artigos por semana. Esse ritmo é uma previsão de trabalho, não uma garantia de indexação pelo Google.
 
 | Prazo após a publicação inicial | Novos artigos planejados | Total publicado planejado |
 |---:|---:|---:|

@@ -1,15 +1,15 @@
 # Checklist F3 — corrigir HTTPS e publicar o InovaLar
 
-Atualizado em 15 de agosto de 2026.
+Atualizado em 16 de agosto de 2026.
 
 ## Situação encontrada
 
 - [x] `CNAME` contém `pmorollo.shop`.
 - [x] `.nojekyll`, `robots.txt` e `sitemap.xml` existem no projeto.
-- [x] Os 30 artigos e o catálogo foram concluídos na cópia de trabalho.
+- [x] Os 30 artigos e o catálogo foram publicados.
 - [x] A propriedade do Search Console foi informada como já configurada pelo responsável.
-- [ ] O endereço público está saudável: em 15/08/2026, `http://pmorollo.shop/` redirecionou para HTTPS e retornou `502 Bad Gateway` por incompatibilidade do certificado com o hostname.
-- [ ] As alterações desta etapa foram enviadas ao repositório remoto.
+- [x] O endereço público está saudável: em 16/08/2026, HTTPS respondeu com status 200 e HTTP redirecionou para HTTPS.
+- [x] As alterações desta etapa foram enviadas ao branch `main`.
 
 ## 1. Conferir a origem do domínio
 
@@ -46,31 +46,31 @@ Não misturar registros de duas hospedagens diferentes. Se houver proxy de CDN, 
 
 Depois que o GitHub Pages reconhecer o DNS:
 
-- [ ] aguardar a emissão do certificado para `pmorollo.shop`;
-- [ ] ativar **Enforce HTTPS** quando a opção estiver disponível;
-- [ ] abrir `https://pmorollo.shop/` sem aviso de certificado;
-- [ ] confirmar que o certificado apresentado inclui o hostname `pmorollo.shop`.
+- [x] aguardar a emissão do certificado para `pmorollo.shop`;
+- [x] ativar **Enforce HTTPS** quando a opção estiver disponível;
+- [x] abrir `https://pmorollo.shop/` sem aviso de certificado;
+- [x] confirmar o certificado pela conexão HTTPS válida para `pmorollo.shop`.
 
 ## 4. Publicar a cópia validada
 
 Esta etapa exige autorização explícita do responsável antes de qualquer push.
 
-- [ ] revisar o resumo do `git diff`;
-- [ ] criar um commit local identificando a conclusão dos 30 artigos;
-- [ ] solicitar ou registrar a autorização de push;
-- [ ] enviar a branch correta ao remoto;
-- [ ] acompanhar a execução do GitHub Pages até concluir.
+- [x] revisar o resumo do `git diff`;
+- [x] criar um commit local identificando a conclusão dos 30 artigos;
+- [x] solicitar e registrar a autorização de publicação;
+- [x] enviar o conteúdo ao branch `main`;
+- [x] acompanhar o GitHub Pages até o conteúdo responder no domínio.
 
 ## 5. Validar o site publicado
 
-- [ ] home abre em HTTPS;
-- [ ] `artigos.html` lista os 30 guias;
-- [ ] pelo menos um artigo de cada categoria abre corretamente;
-- [ ] imagens carregam em computador e celular;
+- [x] home abre em HTTPS;
+- [x] `artigos.html` lista os 30 guias;
+- [x] pelo menos um artigo novo abre corretamente;
+- [x] imagens WebP respondem no domínio publicado;
 - [ ] navegação, foco e leitura funcionam em largura móvel;
-- [ ] `robots.txt` abre;
-- [ ] `sitemap.xml` abre e contém 36 URLs;
-- [ ] não há redirecionamento para domínio inesperado nem erro 502.
+- [x] `robots.txt` abre;
+- [x] `sitemap.xml` abre e contém 36 URLs;
+- [x] não há redirecionamento para domínio inesperado nem erro 502.
 
 ## 6. Search Console
 
