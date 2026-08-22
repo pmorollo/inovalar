@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-22",
+  "policy": {
+    "commercial_source_priority": "Amazon Brasil",
+    "technical_source_priority": "Fabricante ou documentação oficial",
+    "default_rel": "noopener sponsored nofollow",
+    "button_text_default": "Veja frete na loja",
+    "rule": "O link de afiliado substitui apenas a URL comercial. Não altera análise, ordem, conclusão ou texto editorial."
+  },
+  "status_values": [
+    "recebido",
+    "validado",
+    "publicado",
+    "inativo"
+  ],
+  "links": []
+}
