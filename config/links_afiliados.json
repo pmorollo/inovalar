@@ -19,5 +19,18 @@
     "publicado",
     "inativo"
   ],
-  "links": []
+  "links": [
+    {
+      "id": "amazon-2026-08-24-001",
+      "platform": "Amazon Brasil",
+      "affiliate_url": "https://link.amazon/A0cMVkOXn",
+      "associate_id_expected": "inovalar0b-20",
+      "product": null,
+      "asin": null,
+      "status": "recebido",
+      "received_at": "2026-08-24",
+      "used_in": [],
+      "note": "Link curto recebido do usuário. O redirecionamento não pôde ser resolvido automaticamente; produto e ASIN aguardam identificação antes da publicação."
+    }
+  ]
 }
