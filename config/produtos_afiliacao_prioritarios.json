@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-24",
+  "objective": "Direcionar a captacao de links de afiliado para produtos coerentes com os pilares editoriais do InovaLar e com potencial de busca/comparacao.",
+  "priorities": [
+    {
+      "priority": 1,
+      "cluster": "robo_aspirador",
+      "products": ["Electrolux ERB30", "WAP Robot W4000", "Lilin X6"],
+      "reason": "Artigo comercial ja publicado e com CTA pronto para receber links de afiliado.",
+      "status": "gerar_links_agora"
+    },
+    {
+      "priority": 2,
+      "cluster": "casa_inteligente_hubs",
+      "products": ["Samsung SmartThings / hub compativel", "Apple HomePod mini / Apple TV como central"],
+      "reason": "Tema estrategico para explicar ecossistemas antes dos dispositivos e criar serie de artigos.",
+      "status": "pesquisar_modelos_e_links"
+    },
+    {
+      "priority": 3,
+      "cluster": "casa_inteligente_entrada",
+      "products": ["lampada inteligente Matter ou Wi-Fi", "tomada inteligente com medicao", "sensor de abertura", "sensor de movimento"],
+      "reason": "Produtos de entrada, ticket menor e alta afinidade com artigo 'Casa inteligente: por onde comecar'.",
+      "status": "selecionar_marcas_confiaveis"
+    },
+    {
+      "priority": 4,
+      "cluster": "assistentes_e_controle",
+      "products": ["Amazon Echo Dot", "dispositivo de controle por voz compativel com Matter"],
+      "reason": "Permite conteudo sobre controle de voz, compatibilidade e automacoes.",
+      "status": "selecionar_modelos"
+    },
+    {
+      "priority": 5,
+      "cluster": "eletros_casa",
+      "products": ["air fryer", "ar-condicionado inverter", "geladeira inverter", "aspirador vertical", "lava-loucas compacta"],
+      "reason": "Ja existem artigos informativos que podem evoluir para comparativos comerciais sem perder o foco editorial.",
+      "status": "mapear_artigos_existentes"
+    },
+    {
+      "priority": 6,
+      "cluster": "organizacao_funcional",
+      "products": ["organizadores modulares", "caixas transparentes", "prateleiras e suportes sem furacao"],
+      "reason": "Possivel monetizacao complementar, mas prioridade inferior a tecnologia e eletros por ticket e diferenciacao editorial.",
+      "status": "posterior"
+    }
+  ],
+  "selection_rules": [
+    "Nao criar artigo apenas porque existe comissao.",
+    "Priorizar produto que resolva uma busca real do leitor.",
+    "Usar fabricante como fonte tecnica e marketplace como fonte comercial.",
+    "Nao declarar teste pratico quando ele nao ocorreu.",
+    "Nao ordenar produtos por comissao.",
+    "Registrar todo link recebido em config/links_afiliados.json antes da publicacao."
+  ]
+}
