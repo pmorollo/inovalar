@@ -25,36 +25,36 @@
       "platform": "Amazon Brasil",
       "affiliate_url": "https://link.amazon/A0cMVkOXn",
       "associate_id_expected": "inovalar0b-20",
-      "product": null,
-      "asin": null,
-      "status": "recebido",
+      "product": "Lilin X6",
+      "asin": "B0DH1CRRPX",
+      "status": "publicado",
       "received_at": "2026-08-24",
-      "used_in": [],
-      "note": "Link curto recebido do usuário. O redirecionamento não pôde ser resolvido automaticamente; produto e ASIN aguardam identificação antes da publicação."
+      "used_in": ["artigos/escolher-robo-aspirador.html"],
+      "note": "Produto identificado pelo usuário; link usado no botão comercial do artigo de robôs aspiradores."
     },
     {
       "id": "amazon-2026-08-24-002",
       "platform": "Amazon Brasil",
       "affiliate_url": "https://link.amazon/B0aa8KeV7",
       "associate_id_expected": "inovalar0b-20",
-      "product": null,
+      "product": "WAP Robot W4000",
       "asin": null,
-      "status": "recebido",
+      "status": "publicado",
       "received_at": "2026-08-24",
-      "used_in": [],
-      "note": "Segundo link curto recebido do usuário. O redirecionamento não pôde ser resolvido automaticamente; produto e ASIN aguardam identificação antes da publicação."
+      "used_in": ["artigos/escolher-robo-aspirador.html"],
+      "note": "Produto identificado pelo usuário; link usado no botão comercial do artigo de robôs aspiradores."
     },
     {
       "id": "amazon-2026-08-24-003",
       "platform": "Amazon Brasil",
       "affiliate_url": "https://link.amazon/B0ihBbl5V",
       "associate_id_expected": "inovalar0b-20",
-      "product": null,
+      "product": "Electrolux ERB30",
       "asin": null,
-      "status": "recebido",
+      "status": "publicado",
       "received_at": "2026-08-24",
-      "used_in": [],
-      "note": "Terceiro link curto recebido do usuário. Produto e ASIN aguardam identificação antes da publicação."
+      "used_in": ["artigos/escolher-robo-aspirador.html"],
+      "note": "Produto identificado pelo usuário; link usado no botão comercial do artigo de robôs aspiradores."
     }
   ]
 }
