@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Método Garimpo de Infoprodutos — Investigue antes de investir</title>
+<meta name="description" content="Método prático para investigar demanda, anúncios, concorrentes, ofertas e viabilidade antes de testar um infoproduto.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #0B0F19;
+    --bg-card: #111827;
+    --primary: #10B981;
+    --primary-glow: rgba(16, 185, 129, 0.25);
+    --text-main: #F8FAFC;
+    --text-muted: #94A3B8;
+    --border: #1F2937;
+    --accent-gold: #F59E0B;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .top-bar {
+    background: linear-gradient(90deg, #064E3B, #10B981, #064E3B);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 70px 0 50px;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 350px;
+    background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .badge-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 span {
+    color: var(--primary);
+    text-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+  }
+
+  .hero p {
+    font-size: 19px;
+    color: var(--text-muted);
+    max-width: 800px;
+    margin: 0 auto 35px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #10B981, #059669);
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 20px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.6);
+  }
+
+  .hero-security {
+    margin-top: 15px;
+    font-size: 13px;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Grid of Benefits */
+  .section-title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+
+  .section-title span { color: var(--primary); }
+  .section-sub {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 17px;
+    max-width: 650px;
+    margin: 0 auto 50px;
+  }
+
+  .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-bottom: 70px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 30px;
+    border-radius: 16px;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+  }
+
+  .card-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+  }
+
+  .card p {
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+
+  /* Offer Section */
+  .offer-box {
+    background: linear-gradient(135deg, #111827 0%, #064E3B 100%);
+    border: 2px solid var(--primary);
+    border-radius: 24px;
+    padding: 50px;
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto 80px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  .price-old {
+    text-decoration: line-through;
+    color: #94A3B8;
+    font-size: 20px;
+  }
+
+  .price-current {
+    font-size: 56px;
+    font-weight: 900;
+    color: #34D399;
+    margin: 10px 0 25px;
+  }
+
+  .price-current small {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .included-list {
+    text-align: left;
+    max-width: 550px;
+    margin: 0 auto 35px;
+    list-style: none;
+  }
+
+  .included-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .included-list li::before {
+    content: '✔';
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 60px 0;
+  }
+
+  .faq-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  .faq-question {
+    padding: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .faq-answer {
+    padding: 0 20px 20px;
+    color: var(--text-muted);
+    font-size: 15px;
+    display: none;
+  }
+
+  .footer {
+    border-top: 1px solid var(--border);
+    padding: 40px 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 32px; }
+    .hero p { font-size: 16px; }
+    .price-current { font-size: 44px; }
+    .offer-box { padding: 30px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  MÉTODO GARIMPO DE INFOPRODUTOS — INVESTIGUE ANTES DE INVESTIR
+</div>
+
+<div class="container">
+  <section class="hero">
+    <div class="badge-hero">🔎 MÉTODO PRÁTICO DE INVESTIGAÇÃO DE OPORTUNIDADES</div>
+    <h1>Pare de escolher ofertas apenas pela intuição.<br>Conheça o <span>Método Garimpo de Infoprodutos</span></h1>
+    <p>Aprenda a investigar demanda, anúncios, concorrentes, ofertas e viabilidade antes de decidir onde vale a pena investir tempo e dinheiro.</p>
+    
+    <a href="#comprar" class="cta-btn">CONHECER O MÉTODO E ACESSAR O MATERIAL</a>
+    <div class="hero-security">
+      <span>🔎 Método estruturado</span>
+      <span>📘 Material digital</span>
+      <span>🧭 Decisões orientadas por evidências</span>
+    </div>
+  </section>
+
+  <section style="padding: 50px 0;">
+    <h2 class="section-title">O Que Você Vai <span>Aprender</span> no Método</h2>
+    <p class="section-sub">Uma metodologia prática para produtores, afiliados e empreendedores digitais que querem investigar oportunidades antes de investir.</p>
+
+    <div class="grid-cards">
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>Rastreamento de Mercado</h3>
+        <p>Como observar buscas, tendências, anúncios, concorrentes e padrões de comunicação sem confundir atividade publicitária com prova de lucro.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Radar Garimpo — 30 Mercados</h3>
+        <p>Use 30 mercados como pontos de partida para investigação, com perguntas que ajudam a identificar problema, público, sinais e riscos antes de testar.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🧭</div>
+        <h3>Investigação Assistida por IA</h3>
+        <p>Aprenda onde a IA pode apoiar a organização de evidências, comparação de informações e formulação de hipóteses sem substituir a investigação.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <h3>Métricas e Viabilidade</h3>
+        <p>Aprenda a separar faturamento, custos, aquisição e contribuição, construir cenários e avaliar se uma hipótese possui espaço econômico para ser testada.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>Caderno de Campo do Garimpo</h3>
+        <p>Registre hipóteses, fontes, evidências favoráveis e contrárias, métricas, testes e decisões em um workbook operacional.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">💼</div>
+        <h3>Método GARIMPO em 7 Etapas</h3>
+        <p>Geração, Análise, Rastreamento, Investigação, Métricas, Prototipagem e Observação: um processo repetível para investigar oportunidades.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Box -->
+  <section id="comprar" class="offer-box">
+    <div style="text-transform: uppercase; font-size: 14px; font-weight: 800; color: #F59E0B; letter-spacing: 2px;">OFERTA PRINCIPAL</div>
+    <h2 style="font-size: 32px; color: white; margin: 10px 0 20px;">Método Garimpo de Infoprodutos + Caderno de Campo</h2>
+    
+    <div style="color:#94A3B8;font-size:18px;">Investimento atual</div>
+    <div class="price-current"><small>R$</small> 47,00 <small>à vista</small></div>
+
+    <ul class="included-list">
+      <li><strong>Método Garimpo de Infoprodutos</strong> — e-book completo em PDF</li>
+      <li><strong>Caderno de Campo do Garimpo</strong> — workbook para executar cada investigação</li>
+      <li><strong>Radar Garimpo</strong> — 30 mercados para iniciar investigações</li>
+      <li><strong>Quadro qualitativo de decisão</strong> — Descartar, Arquivar, Investigar, Testar ou Ampliar</li>
+      <li><strong>4 estudos de caso</strong> — aplicação prática do método em diferentes decisões</li>
+      <li><strong>Ferramentas de investigação</strong> — Google, Trends, bibliotecas de anúncios, pesquisa visual e voz do consumidor</li>
+      <li><strong>Acesso digital</strong> ao e-book e ao Caderno de Campo</li>
+    </ul>
+
+    <div style="max-width:600px;margin:0 auto 28px;padding:16px 18px;border:1px solid rgba(245,158,11,.45);border-radius:14px;background:rgba(245,158,11,.08);color:#F8FAFC;font-size:14px;line-height:1.55;"><strong style="color:#F59E0B;">Opcional no checkout:</strong> Copiloto Garimpo — 30 Prompts de IA por <strong>R$ 17,90</strong>. Um complemento para acelerar análises e organizar evidências com IA. Não é necessário para aplicar o método.</div>
+
+    <a href="https://pay.cakto.com.br/o76q7h6_1130326" target="_blank" class="cta-btn" style="width: 100%; max-width: 450px;">QUERO ACESSAR O MÉTODO GARIMPO</a>
+    <div style="margin-top: 20px; font-size: 13px; color: #94A3B8;">Material digital. O acesso é liberado conforme as condições apresentadas no checkout.</div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2 class="section-title">Perguntas <span>Frequentes</span></h2>
+    <div style="max-width: 800px; margin: 30px auto 0;">
+      <div class="faq-item">
+        <div class="faq-question">Como recebo o acesso ao material? <span>▼</span></div>
+        <div class="faq-answer">A oferta principal reúne o e-book Método Garimpo de Infoprodutos e o Caderno de Campo do Garimpo. O Radar Garimpo e os estudos de caso fazem parte do conteúdo do método. O Copiloto Garimpo — 30 Prompts de IA é um material complementar opcional, oferecido separadamente no checkout como order bump.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">O Copiloto Garimpo está incluído nos R$ 47? <span>▼</span></div>
+        <div class="faq-answer">Não. O Copiloto Garimpo — 30 Prompts de IA é um complemento opcional. Ele poderá ser adicionado no checkout por R$ 17,90 para quem quiser usar prompts estruturados para acelerar a investigação com IA.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">O produto inclui licença de revenda ou PLR? <span>▼</span></div>
+        <div class="faq-answer">Não nesta oferta principal. O Método Garimpo é vendido para uso do comprador. Uma eventual licença comercial/PLR deve ser oferecida separadamente e com direitos definidos de forma específica.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Preciso de ferramentas pagas para aplicar o método? <span>▼</span></div>
+        <div class="faq-answer">Não necessariamente. O método pode ser aplicado com fontes públicas e ferramentas gratuitas ou com planos gratuitos, embora algumas plataformas possam alterar recursos, limites e condições ao longo do tempo.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Existe garantia? <span>▼</span></div>
+        <div class="faq-answer">Consulte no checkout as condições de compra, cancelamento e reembolso aplicáveis à oferta.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Método Garimpo de Infoprodutos. Todos os direitos reservados.</p>
+    <p style="margin-top: 8px; color: #64748B;">O Método Garimpo é um processo de investigação e apoio à decisão. Não garante vendas, lucro, ROAS, validação de mercado ou resultados financeiros.</p>
+  </div>
+</footer>
+
+<script>
+  // FAQ Accordion
+  document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', () => {
+      const ans = item.nextElementSibling;
+      const isOpen = ans.style.display === 'block';
+      document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+      ans.style.display = isOpen ? 'none' : 'block';
+    });
+  });
+</script>
+</body>
+</html>
