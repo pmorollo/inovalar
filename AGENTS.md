@@ -36,7 +36,7 @@ O projeto está em fase de validação de tráfego orgânico. Seu foco inclui ca
 
 ## Privacidade e monetização
 
-- A política atual declara que não há anúncios nem programas de afiliados.
+- A política (revisada em 22/10/2026) declara: artigos sem anúncios, afiliados nem Meta Pixel; páginas de produtos com Meta Pixel e checkout Cakto. Qualquer novo rastreador ou landing com pixel exige atualizar a política.
 - Antes de adicionar análise de tráfego com cookies, comentários, anúncios ou afiliados, revisar a política de privacidade e os avisos necessários.
 - Não inserir códigos de publicidade antecipadamente.
 
