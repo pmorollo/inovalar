@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Método Garimpo de Infoprodutos — Investigue antes de investir</title>
 <meta name="description" content="Método prático para investigar demanda, anúncios, concorrentes, ofertas e viabilidade antes de testar um infoproduto.">
+<link rel="canonical" href="https://pmorollo.shop/metodogarimpo/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Método Garimpo de Infoprodutos — Investigue antes de investir">
+<meta property="og:description" content="Método prático para investigar demanda, anúncios, concorrentes, ofertas e viabilidade antes de testar um infoproduto.">
+<meta property="og:url" content="https://pmorollo.shop/metodogarimpo/">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -374,8 +379,9 @@
 
     <div style="max-width:600px;margin:0 auto 28px;padding:16px 18px;border:1px solid rgba(245,158,11,.45);border-radius:14px;background:rgba(245,158,11,.08);color:#F8FAFC;font-size:14px;line-height:1.55;"><strong style="color:#F59E0B;">Opcional no checkout:</strong> Copiloto Garimpo — 30 Prompts de IA por <strong>R$ 17,90</strong>. Um complemento para acelerar análises e organizar evidências com IA. Não é necessário para aplicar o método.</div>
 
-    <a href="https://pay.cakto.com.br/o76q7h6_1130326" target="_blank" class="cta-btn" style="width: 100%; max-width: 450px;">QUERO ACESSAR O MÉTODO GARIMPO</a>
-    <div style="margin-top: 20px; font-size: 13px; color: #94A3B8;">Material digital. O acesso é liberado conforme as condições apresentadas no checkout.</div>
+    <a id="cta-checkout" href="https://pay.cakto.com.br/fjno7sd_1174046" target="_blank" rel="noopener" class="cta-btn" style="width: 100%; max-width: 450px;">QUERO ACESSAR O MÉTODO GARIMPO</a>
+    <div style="margin-top: 20px; font-size: 13px; color: #94A3B8;">Material digital. Acesso liberado após a confirmação do pagamento, conforme as condições do checkout.</div>
+    <div style="margin-top: 10px; font-size: 13px; color: #34D399; font-weight: 700;">Garantia de 7 dias para solicitar reembolso, conforme o Código de Defesa do Consumidor e as condições do checkout.</div>
   </section>
 
   <!-- FAQ Section -->
@@ -400,7 +406,7 @@
       </div>
       <div class="faq-item">
         <div class="faq-question">Existe garantia? <span>▼</span></div>
-        <div class="faq-answer">Consulte no checkout as condições de compra, cancelamento e reembolso aplicáveis à oferta.</div>
+        <div class="faq-answer">Você tem 7 dias, contados da confirmação da compra, para solicitar o reembolso integral, conforme o Código de Defesa do Consumidor e as condições apresentadas no checkout.</div>
       </div>
     </div>
   </section>
@@ -408,12 +414,26 @@
 
 <footer class="footer">
   <div class="container">
-    <p>© 2026 Método Garimpo de Infoprodutos. Todos os direitos reservados.</p>
+    <p>© 2026 Método Garimpo de Infoprodutos. Autoria: Equipe Nexo. Todos os direitos reservados.</p>
     <p style="margin-top: 8px; color: #64748B;">O Método Garimpo é um processo de investigação e apoio à decisão. Não garante vendas, lucro, ROAS, validação de mercado ou resultados financeiros.</p>
+    <p style="margin-top: 10px;"><a href="/politica-privacidade.html" style="color:#94A3B8;">Política de Privacidade</a> · <a href="/termos-de-uso.html" style="color:#94A3B8;">Termos de Uso</a> · <a href="/contato.html" style="color:#94A3B8;">Contato</a></p>
   </div>
 </footer>
 
 <script>
+  // Repassa parâmetros de campanha da landing para o checkout
+  (function () {
+    var base = 'https://pay.cakto.com.br/fjno7sd_1174046';
+    var keep = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'src', 'sck'];
+    var params = new URLSearchParams(window.location.search);
+    var out = new URLSearchParams();
+    keep.forEach(function (key) {
+      if (params.has(key)) out.set(key, params.get(key));
+    });
+    var cta = document.getElementById('cta-checkout');
+    if (cta) cta.href = base + (out.toString() ? '?' + out.toString() : '');
+  })();
+
   // FAQ Accordion
   document.querySelectorAll('.faq-question').forEach(item => {
     item.addEventListener('click', () => {
