@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UGC Creator Machine AI — Roteiros UGC para Windows | R$ 29 pagamento único</title>
+  <meta name="description" content="Aplicativo local para Windows 10/11 que organiza roteiros UGC cena a cena, 4 ganchos e briefing de gravação. R$ 29, pagamento único, com garantia de 7 dias.">
+  <link rel="canonical" href="https://pmorollo.shop/ugc-creator/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UGC Creator Machine AI — roteiros UGC para Windows">
+  <meta property="og:description" content="Roteiros cena a cena, 4 ganchos e briefing para gravar. App local para Windows 10/11. R$ 29, pagamento único.">
+  <meta property="og:url" content="https://pmorollo.shop/ugc-creator/">
+  <meta name="twitter:card" content="summary">
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: #0B0F17; color: #E2E8F0; font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif; line-height: 1.65; }
+    a { color: #7DD3FC; }
+    .wrap { width: min(1080px, calc(100% - 36px)); margin: auto; }
+    .topbar { border-bottom: 1px solid #1E293B; background: rgba(11,15,23,.92); position: sticky; top: 0; z-index: 10; backdrop-filter: blur(8px); }
+    .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -.02em; }
+    .brand span { background: #1D4ED8; color: #fff; border-radius: 10px; padding: 2px 9px; font-size: 13px; }
+    .topbar nav { display: flex; gap: 18px; font-size: 14px; }
+    .topbar nav a { color: #94A3B8; text-decoration: none; }
+    .topbar nav a:hover { color: #E2E8F0; }
+    .hero { padding: 64px 0 44px; background: radial-gradient(900px 380px at 20% -10%, rgba(29,78,216,.35), transparent 65%); }
+    .badge { display: inline-flex; gap: 8px; align-items: center; border: 1px solid #1E40AF; background: rgba(29,78,216,.15); color: #BFDBFE; padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+    h1 { font-size: clamp(30px, 5vw, 50px); line-height: 1.1; letter-spacing: -.03em; margin: 18px 0 16px; }
+    h1 em { color: #60A5FA; font-style: normal; }
+    .lead { font-size: 18px; color: #CBD5E1; max-width: 720px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 32px; align-items: start; margin-top: 8px; }
+    .offer { background: #111827; border: 1px solid #1F2A3D; border-radius: 18px; padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+    .offer .price { font-size: 40px; font-weight: 800; letter-spacing: -.03em; }
+    .offer .price small { font-size: 15px; color: #94A3B8; font-weight: 600; }
+    .offer ul { list-style: none; margin: 16px 0 20px; display: grid; gap: 8px; font-size: 14px; color: #CBD5E1; }
+    .offer li::before { content: "✓"; color: #34D399; font-weight: 800; margin-right: 8px; }
+    .btn { display: block; text-align: center; background: #2563EB; color: #fff; text-decoration: none; font-weight: 800; padding: 15px 18px; border-radius: 12px; transition: background .2s; }
+    .btn:hover { background: #1D4ED8; }
+    .micro { font-size: 12px; color: #94A3B8; margin-top: 12px; text-align: center; }
+    .section { padding: 52px 0; border-top: 1px solid #131C2B; }
+    .section h2 { font-size: clamp(23px, 3vw, 32px); letter-spacing: -.02em; margin-bottom: 8px; }
+    .section .sub { color: #94A3B8; max-width: 720px; margin-bottom: 26px; }
+    .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { background: #0F1724; border: 1px solid #1E293B; border-radius: 14px; padding: 20px; }
+    .card h3 { font-size: 16px; margin-bottom: 8px; }
+    .card p, .card li { font-size: 14px; color: #CBD5E1; }
+    .card ul { padding-left: 18px; display: grid; gap: 6px; }
+    .step { font-size: 12px; font-weight: 800; color: #60A5FA; letter-spacing: .08em; text-transform: uppercase; }
+    .req { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .req .card strong { color: #E2E8F0; }
+    .notice { border-left: 3px solid #F59E0B; background: rgba(245,158,11,.08); padding: 16px 18px; border-radius: 10px; font-size: 14px; color: #FDE68A; }
+    .notice strong { color: #FDE68A; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .ok h3 { color: #34D399; }
+    .no h3 { color: #F87171; }
+    .faq details { border: 1px solid #1E293B; border-radius: 12px; padding: 14px 18px; background: #0F1724; margin-bottom: 10px; }
+    .faq summary { cursor: pointer; font-weight: 700; font-size: 15px; }
+    .faq p { margin-top: 10px; font-size: 14px; color: #CBD5E1; }
+    .final { text-align: center; padding: 56px 0; }
+    .final .offer { max-width: 480px; margin: 24px auto 0; text-align: left; }
+    footer { border-top: 1px solid #1E293B; padding: 28px 0 40px; font-size: 13px; color: #94A3B8; }
+    footer p { margin-bottom: 6px; }
+    @media (max-width: 860px) {
+      .hero-grid, .grid3, .req, .two-col { grid-template-columns: 1fr; }
+      .topbar nav { display: none; }
+      .hero { padding-top: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span>UGC</span> Creator Machine AI</div>
+    <nav>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#requisitos">Requisitos</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#comprar">Comprar</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="badge">Aplicativo local · Windows 10/11 64 bits</span>
+        <h1>Roteiros UGC <em>cena a cena</em>, prontos para gravar</h1>
+        <p class="lead">Descreva o produto, o público e a dor que ele resolve. O app organiza um roteiro de cerca de 30 segundos com falas, enquadramento, texto na tela, 4 ganchos para testar e um briefing para enviar a quem vai gravar.</p>
+        <p class="lead" style="margin-top:14px;font-size:15px;color:#94A3B8;">Ele não grava, não edita e não publica vídeos. É uma ferramenta de escrita e organização do roteiro.</p>
+      </div>
+      <div class="offer" id="comprar">
+        <div class="price">R$ 29 <small>pagamento único</small></div>
+        <p style="font-size:13px;color:#94A3B8;margin-top:4px;">Sem mensalidade e sem renovação automática.</p>
+        <ul>
+          <li>App completo para Windows 10/11 (64 bits)</li>
+          <li>Runtime incluído: não precisa instalar Python</li>
+          <li>Guia de uso e configuração da chave Gemini</li>
+          <li>Acesso pela área de membros da Cakto</li>
+        </ul>
+        <a class="btn" id="checkout-link" href="https://pay.cakto.com.br/85hv7hr" rel="noopener">Comprar por R$ 29</a>
+        <p class="micro">Pix ou cartão no checkout da Cakto. Garantia de 7 dias para pedir reembolso, conforme o Código de Defesa do Consumidor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="como-funciona">
+  <div class="wrap">
+    <h2>Como funciona</h2>
+    <p class="sub">Três passos dentro do app, que abre no seu navegador em <code>localhost</code>. Não existe conta, login nem painel online.</p>
+    <div class="grid3">
+      <div class="card">
+        <span class="step">Passo 1</span>
+        <h3>Descreva o vídeo</h3>
+        <p>Produto, nicho, perfil de quem grava, formato, dor principal e transformação prometida. Há templates prontos para preencher mais rápido.</p>
+      </div>
+      <div class="card">
+        <span class="step">Passo 2</span>
+        <h3>Gere o roteiro</h3>
+        <p>O app monta de 3 a 8 cenas com tempo, câmera, fala e texto na tela, além de 4 ganchos diferentes para os primeiros segundos.</p>
+      </div>
+      <div class="card">
+        <span class="step">Passo 3</span>
+        <h3>Copie e grave</h3>
+        <p>Use a aba Briefing para enviar as instruções ao criador, o teleprompter para ler a fala e o botão copiar para levar o texto aonde precisar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>O que está incluído</h2>
+    <p class="sub">Um único download, sem cobrança recorrente.</p>
+    <div class="grid3">
+      <div class="card"><h3>🤳 Gerador de roteiros</h3><p>Roteiro cena a cena com duração sugerida, enquadramento, fala e texto na tela.</p></div>
+      <div class="card"><h3>🪝 4 ganchos por roteiro</h3><p>Aberturas diferentes para você testar qual retém melhor o público, sem prometer resultado.</p></div>
+      <div class="card"><h3>📋 Briefing para o criador</h3><p>Iluminação, áudio, enquadramento e clima em um texto pronto para copiar e enviar.</p></div>
+      <div class="card"><h3>📱 Teleprompter</h3><p>Leitura com velocidade ajustável para gravar sem decorar o texto.</p></div>
+      <div class="card"><h3>📚 Templates por nicho</h3><p>Modelos de partida para beleza, saúde, produtos físicos, renda extra e apps.</p></div>
+      <div class="card"><h3>💾 Funciona offline no modo demonstração</h3><p>Sem chave de IA, o app cria um roteiro neutro localmente e avisa que a IA não foi usada.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="requisitos">
+  <div class="wrap">
+    <h2>Requisitos e limites reais</h2>
+    <p class="sub">Antes de comprar, confira se o seu computador atende. O app é feito para Windows; não há versão para Mac, Android ou iPhone.</p>
+    <div class="req">
+      <div class="card"><strong>Sistema</strong><p>Windows 10 ou Windows 11, 64 bits.</p></div>
+      <div class="card"><strong>Instalação</strong><p>Basta extrair o ZIP e abrir o atalho. O Python já vem incluído no pacote.</p></div>
+      <div class="card"><strong>Internet</strong><p>Necessária apenas para gerar com IA. A chave e o histórico ficam no seu computador.</p></div>
+      <div class="card"><strong>Chave do Google Gemini</strong><p>Você usa a sua chave, criada gratuitamente no Google AI Studio. O plano gratuito tem limite de requisições por minuto e por dia.</p></div>
+    </div>
+    <p class="notice" style="margin-top:16px;"><strong>Privacidade:</strong> ao gerar com IA, os dados do formulário (produto, nicho, perfil, dor, transformação e chamada para ação) são enviados ao Google Gemini. Nenhum dado é enviado para servidores da Nexo. A chave fica salva localmente em <code>%APPDATA%\UGCCreatorMachine\config.json</code>.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>O que ele faz — e o que ele não faz</h2>
+    <div class="two-col">
+      <div class="card ok">
+        <h3>Faz</h3>
+        <ul>
+          <li>Organiza roteiros UGC com começo, desenvolvimento e chamada final.</li>
+          <li>Sugere enquadramento, iluminação e tom de voz.</li>
+          <li>Entrega 4 ganchos para teste A/B de abertura.</li>
+          <li>Gera briefing para enviar a um criador contratado.</li>
+          <li>Funciona em modo demonstração sem chave de IA.</li>
+        </ul>
+      </div>
+      <div class="card no">
+        <h3>Não faz</h3>
+        <ul>
+          <li>Não grava, edita, publica ou impulsiona vídeos.</li>
+          <li>Não garante visualizações, cliques, seguidores ou vendas.</li>
+          <li>Não inventa preço, desconto, depoimento, garantia ou urgência.</li>
+          <li>Não substitui a revisão humana antes de publicar.</li>
+          <li>Não roda em Mac, Android ou iPhone.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Para quem é</h2>
+    <div class="grid3">
+      <div class="card"><h3>Bom para</h3><p>Quem grava vídeos de produto, gerencia criadores ou precisa padronizar briefings e reduzir o tempo de escrita.</p></div>
+      <div class="card"><h3>Não é para</h3><p>Quem procura editor de vídeo, agência que promete resultado garantido ou quem usa apenas celular.</p></div>
+      <div class="card"><h3>Uso esperado</h3><p>Escrever e organizar roteiros. A gravação, a publicação e o anúncio continuam por sua conta.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq" id="faq">
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <div style="margin-top:22px;">
+      <details>
+        <summary>É assinatura ou pagamento único?</summary>
+        <p>Pagamento único de R$ 29,00. Não há mensalidade nem renovação automática. O checkout da Cakto mostra a cobrança uma única vez.</p>
+      </details>
+      <details>
+        <summary>Preciso instalar Python?</summary>
+        <p>Não. O pacote oficial já inclui o runtime necessário. Você extrai o ZIP e abre o arquivo “INICIAR UGC CREATOR MACHINE.bat”.</p>
+      </details>
+      <details>
+        <summary>Funciona no Mac ou no celular?</summary>
+        <p>Não. Esta versão é exclusiva para Windows 10/11 de 64 bits. Não há versão para macOS, Android ou iPhone.</p>
+      </details>
+      <details>
+        <summary>Preciso pagar pela IA?</summary>
+        <p>O app usa a sua chave do Google Gemini. O Google oferece uma camada gratuita com limite de requisições; planos pagos são opcionais e contratados direto com o Google.</p>
+      </details>
+      <details>
+        <summary>O que acontece se eu não tiver chave?</summary>
+        <p>O app abre em modo demonstração: monta um roteiro neutro localmente e informa que a IA não foi usada. Você pode configurar a chave depois, na aba Configurações.</p>
+      </details>
+      <details>
+        <summary>As gerações são ilimitadas?</summary>
+        <p>Não. O limite é o da sua chave no Google, que varia por minuto e por dia. O app não vende nem promete volume ilimitado de gerações.</p>
+      </details>
+      <details>
+        <summary>Meus dados ficam com a Nexo?</summary>
+        <p>Não. A chave e o histórico ficam no seu computador. Ao usar a IA, os dados do formulário são enviados ao Google Gemini para produzir o texto.</p>
+      </details>
+      <details>
+        <summary>Posso pedir reembolso?</summary>
+        <p>Sim. Você tem 7 dias, contados da confirmação da compra, para solicitar o reembolso integral, conforme o Código de Defesa do Consumidor e as condições do checkout.</p>
+      </details>
+      <details>
+        <summary>Como recebo o app?</summary>
+        <p>Após a confirmação do pagamento, o acesso ao arquivo é liberado pela área de membros da Cakto, no e-mail informado na compra.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Roteiro pronto para a próxima gravação</h2>
+    <p class="sub" style="margin:8px auto 0;">Windows 10/11 64 bits · R$ 29 pagamento único · garantia de 7 dias</p>
+    <div class="offer">
+      <div class="price">R$ 29 <small>pagamento único</small></div>
+      <a class="btn" id="checkout-link-bottom" href="https://pay.cakto.com.br/85hv7hr" rel="noopener" style="margin-top:18px;">Comprar agora</a>
+      <p class="micro">Compra processada pela Cakto. Acesso liberado após a confirmação do pagamento.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>UGC Creator Machine AI</strong> — produto digital da Nexo.</p>
+    <p>Aplicativo local para Windows 10/11 64 bits. Não há versão para Mac, Android ou iPhone.</p>
+    <p style="margin-top:10px;"><a href="https://pmorollo.shop/politica-privacidade.html">Política de Privacidade</a> · <a href="https://pmorollo.shop/termos-de-uso.html">Termos de Uso</a> · <a href="https://pmorollo.shop/contato.html">Contato</a></p>
+    <p style="margin-top:10px;">Este site não é afiliado ao Google. Gemini é uma marca do Google LLC.</p>
+  </div>
+</footer>
+
+<script>
+  // Repassa UTMs e parâmetros de campanha para o checkout.
+  (function () {
+    var checkout = "https://pay.cakto.com.br/85hv7hr";
+    var params = new URLSearchParams(window.location.search);
+    var keep = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "src", "sck"];
+    var forward = new URLSearchParams();
+    keep.forEach(function (key) {
+      if (params.has(key)) forward.set(key, params.get(key));
+    });
+    var query = forward.toString();
+    if (query) {
+      document.querySelectorAll("#checkout-link, #checkout-link-bottom").forEach(function (link) {
+        link.href = checkout + "?" + query;
+      });
+    }
+  })();
+</script>
+</body>
+</html>
