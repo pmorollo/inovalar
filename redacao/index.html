@@ -477,6 +477,19 @@
         }
     </style>
     <link rel="canonical" href="https://pmorollo.shop/redacao/">
+<!-- Meta Pixel Página Virada (P10, P11) – P11 Redação Coringa para Concursos (1404933674695675) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1404933674695675');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_ids:['P11'],content_type:'product',content_category:'Página Virada',content_name:'Redação Coringa para Concursos',value:19.9,currency:'BRL'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1404933674695675&ev=PageView&noscript=1" alt=""></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body>
 
@@ -736,6 +749,16 @@
     link.href=url.toString();
   });
 })();
+</script>
+<script>
+// evento InitiateCheckout no clique para o checkout da Cakto (pixel Página Virada (P10, P11))
+document.querySelectorAll('a[href^="https://pay.cakto.com.br/"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    try{ if(window.fbq){ fbq('track','InitiateCheckout',{content_ids:['P11'],content_type:'product',content_category:'Página Virada',content_name:'Redação Coringa para Concursos',value:19.9,currency:'BRL'}); } }catch(err){}
+    if(a.target==='_blank') return;
+    e.preventDefault(); var u=a.href; setTimeout(function(){location.href=u;},250);
+  });
+});
 </script>
 </body>
 </html>
