@@ -295,6 +295,19 @@
     .offer-box { padding: 30px 20px; }
   }
 </style>
+<!-- Meta Pixel Nexo Apps (P8, P9, P13, P14) – P8 Método Garimpo (2291879388380275) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2291879388380275');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_ids:['P8'],content_type:'product',content_category:'Nexo Apps',content_name:'Método Garimpo de Infoprodutos',value:27.9,currency:'BRL'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2291879388380275&ev=PageView&noscript=1" alt=""></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body>
 
@@ -432,6 +445,9 @@
     });
     var cta = document.getElementById('cta-checkout');
     if (cta) cta.href = base + (out.toString() ? '?' + out.toString() : '');
+    if (cta) cta.addEventListener('click', function () {
+      try { if (window.fbq) { fbq('track', 'InitiateCheckout', {content_ids:['P8'],content_type:'product',content_category:'Nexo Apps',content_name:'Método Garimpo de Infoprodutos',value:27.9,currency:'BRL'}); } } catch (err) {}
+    });
   })();
 
   // FAQ Accordion
