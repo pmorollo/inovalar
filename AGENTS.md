@@ -48,3 +48,4 @@ O projeto está em fase de validação de tráfego orgânico. Seu foco inclui ca
 - Verificar erros de HTML, legibilidade, foco pelo teclado e textos alternativos.
 - Executar `git diff --check`.
 - Não publicar nem enviar alterações ao repositório remoto sem autorização explícita do usuário.
+- Desde 04/11/2026, as landings de produtos de outras marcas (Ser+, Página Virada, Nexo Apps, Padaria) apontam para as páginas legais neutras `/legal/privacidade.html` e `/legal/termos.html`, sem a marca InovaLar. Novas landings devem usar essas páginas; `politica-privacidade.html` e `termos-de-uso.html` ficam para o InovaLar.
