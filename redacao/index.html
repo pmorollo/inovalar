@@ -742,7 +742,7 @@ fbq('track','ViewContent',{content_ids:['P11'],content_type:'product',content_ca
 <script>
 (function(){
   var params=new URLSearchParams(window.location.search);
-  var allowed=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck'];
+  var allowed=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck','fbclid'];
   document.querySelectorAll('a[href^="https://pay.cakto.com.br/"]').forEach(function(link){
     var url=new URL(link.href);
     allowed.forEach(function(key){if(params.has(key))url.searchParams.set(key,params.get(key));});
