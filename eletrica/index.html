@@ -27,7 +27,19 @@ document.querySelectorAll('a[href^="https://pay.cakto.com.br/"]').forEach(functi
   a.addEventListener('click',function(e){
     try{ if(window.fbq){ fbq('track','InitiateCheckout',{content_ids:['P7'],content_type:'product',content_category:'INOVA LAR',content_name:'Elétrica da Casa sem Mistério',value:47,currency:'BRL'}); } }catch(err){}
     if(a.target==='_blank') return;
-    e.preventDefault(); var u=a.href; setTimeout(function(){location.href=u;},250);
+    e.preventDefault();
+    // Preserva a origem do tráfego da landing até o checkout, sem alterar a oferta.
+    var u=a.href;
+    try {
+      var checkoutUrl=new URL(a.href);
+      var sourceParams=new URLSearchParams(window.location.search);
+      ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'].forEach(function(key){
+        var val=sourceParams.get(key);
+        if(val && !checkoutUrl.searchParams.has(key)) checkoutUrl.searchParams.set(key,val);
+      });
+      u=checkoutUrl.toString();
+    } catch(err) {}
+    setTimeout(function(){location.href=u;},250);
   });
 });
 </script>
