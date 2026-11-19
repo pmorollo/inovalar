@@ -412,6 +412,24 @@
         .guarantee-box h3 { font-size: 1.1rem; margin-bottom: 6px; color: #fff; }
         .guarantee-box p { font-size: 0.9rem; color: var(--text-muted); }
 
+        /* AVULSOS */
+        .avulsos { max-width: 520px; margin: 26px auto 0; text-align: center; }
+        .avulsos p { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 12px; }
+        .avulsos-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+        .btn-avulso {
+            flex: 1 1 200px;
+            display: block;
+            padding: 13px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--accent-gold-light);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.92rem;
+            transition: all 0.2s ease;
+        }
+        .btn-avulso:hover { background: var(--bg-card-hover); border-color: var(--accent-gold); }
+
         /* FAQ */
         details.faq {
             background: var(--bg-card);
@@ -706,6 +724,14 @@ fbq('track','ViewContent',{content_ids:['KIT_RETA_FINAL'],content_type:'product'
                 </div>
             </div>
 
+            <div class="avulsos" id="avulsos">
+                <p>Prefere só uma parte? Os guias também são vendidos separadamente. O kit reúne os dois e ainda inclui as 100 questões e o guia de conectivos.</p>
+                <div class="avulsos-btns">
+                    <a href="/portugues/" class="btn-avulso js-avulso">Só Língua Portuguesa ➔</a>
+                    <a href="/redacao/" class="btn-avulso js-avulso">Só Redação ➔</a>
+                </div>
+            </div>
+
             <p class="fine-print">
                 Material de apoio ao estudo. Não substitui o edital, o comando da questão, os critérios de correção da banca nem acompanhamento de professor.
             </p>
@@ -788,6 +814,19 @@ fbq('track','ViewContent',{content_ids:['KIT_RETA_FINAL'],content_type:'product'
   var params = new URLSearchParams(window.location.search);
   var allowed = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck'];
   document.querySelectorAll('a.js-checkout').forEach(function(link){
+    var url = new URL(link.href);
+    allowed.forEach(function(key){ if(params.has(key)) url.searchParams.set(key, params.get(key)); });
+    link.href = url.toString();
+  });
+})();
+</script>
+
+<script>
+// Repasse de UTM para as landings dos guias avulsos
+(function(){
+  var params = new URLSearchParams(window.location.search);
+  var allowed = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck'];
+  document.querySelectorAll('a.js-avulso').forEach(function(link){
     var url = new URL(link.href);
     allowed.forEach(function(key){ if(params.has(key)) url.searchParams.set(key, params.get(key)); });
     link.href = url.toString();
