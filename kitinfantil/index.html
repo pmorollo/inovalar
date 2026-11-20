@@ -32,16 +32,19 @@
   <style>
     @media(max-width:900px){.cover-stack{left:auto;right:16px;bottom:14px}}
     @media(max-width:620px){.cover-stack{left:auto;right:12px;bottom:10px}.cover-stack img{width:84px}}
+    .hero-grid{grid-template-areas:"intro visual" "action visual";row-gap:0}.pat-intro{grid-area:intro}.pat-action{grid-area:action}.hero-visual{grid-area:visual}.hero-video{transform:none;background:#000}.hero-video iframe{display:block;width:100%;aspect-ratio:16/9;border:0}.hero-visual .cover-stack{position:static;margin-top:18px}
+    @media(max-width:900px){.hero-grid{grid-template-areas:"intro" "visual" "action";row-gap:12px}.hero-visual .cover-stack{display:none}.hero{padding-top:20px}.hero h1{font-size:clamp(1.9rem,8vw,2.55rem)}}
   </style>
 </head>
 <body>
   <div class="topbar">Material digital em PDF • pronto para imprimir em casa</div>
   <header class="hero">
     <div class="wrap hero-grid">
-      <div>
+      <div class="pat-intro">
         <div class="brand"><span class="brand-mark">🐾</span> Nexo Kids</div>
         <span class="eyebrow">✨ Acampamento das Patinhas</span>
         <h1>Sete missões para <span>colorir e brincar</span> longe das telas.</h1>
+      </div><div class="pat-action">
         <p class="hero-copy">Uma aventura para crianças de 4 a 6 anos: <strong>9 páginas A4</strong> com sete missões e uma página especial para colorir, mais o bônus <strong>O Mistério do Boné Perdido</strong>, com 4 páginas.</p>
         <div class="price-row">
           <div class="price-box"><small>por apenas</small><strong>R$ 8,90</strong></div>
@@ -50,7 +53,7 @@
         <div class="micro">Pagamento único • Pix ou cartão • imprima quando quiser</div>
       </div>
       <div class="hero-visual">
-        <div class="hero-photo"><img src="assets/crianca-realizando.png" alt="Criança realizando uma atividade impressa do Acampamento das Patinhas"></div>
+        <div class="hero-photo hero-video"><iframe src="https://www.youtube-nocookie.com/embed/OkiYXfHi6r8?playsinline=1&amp;rel=0" title="Acampamento das Patinhas — vídeo de apresentação" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
         <div class="cover-stack" aria-label="Capa do Acampamento e do bônus">
           <img src="assets/capa-acampamento.png" alt="Capa do Acampamento das Patinhas">
           <img src="assets/capa-bonus.png" alt="Capa do bônus O Mistério do Boné Perdido">
