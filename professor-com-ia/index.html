@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Professor com IA | Guia de ChatGPT e BNCC para docentes · R$ 27,90</title>
+<meta name="description" content="Guia em PDF para planejar aulas, preparar avaliações e adaptar atividades com IA, com a revisão do professor e a BNCC como referência. 25 prompts comentados e 6 casos completos. R$ 27,90.">
+<meta property="og:type" content="product">
+<meta property="og:title" content="Professor com IA · Guia de ChatGPT e BNCC para docentes">
+<meta property="og:description" content="25 prompts comentados, 6 casos completos e um método de revisão. Todas as disciplinas, com ênfase em Língua Portuguesa e Literatura.">
+<meta property="og:image" content="https://pmorollo.shop/professor-com-ia/assets/capa-professor-com-ia.jpg">
+<meta property="og:url" content="https://pmorollo.shop/professor-com-ia/">
+<link rel="canonical" href="https://pmorollo.shop/professor-com-ia/">
+<meta name="theme-color" content="#1d2a44">
+<style>
+:root{--navy:#1d2a44;--ocre:#b7791f;--ocre-claro:#fdf6e9;--tinta:#1f2937;--cinza:#5b6472;--linha:#e5e7eb;--fundo:#fbfaf7;--verde:#2f6f4f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+img{display:block;max-width:100%;height:auto}a{color:inherit}
+.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--navy);line-height:1.15}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin:0 0 12px}
+.lead{color:var(--cinza);font-size:1.08rem;max-width:720px}
+.eyebrow{display:inline-block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ocre);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:12px;background:var(--ocre);color:#fff;font-weight:800;text-decoration:none;box-shadow:0 10px 24px rgba(183,121,31,.28)}
+.btn:hover{filter:brightness(1.05)}.btn:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+.micro{font-size:.88rem;color:var(--cinza);margin-top:10px}
+section{padding:72px 0}
+.topo{background:var(--navy);color:#e5e7eb;text-align:center;font-size:.9rem;padding:9px 14px}
+.hero{background:linear-gradient(160deg,#fff 0%,#f4efe4 100%);padding:56px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;grid-template-areas:"intro media" "acao media";column-gap:56px;align-items:center}
+.intro{grid-area:intro}.acao{grid-area:acao}.media{grid-area:media}
+.hero h1{font-size:clamp(2.4rem,5vw,3.8rem);margin:12px 0 16px}
+.hero .sub{font-size:1.15rem;color:#374151;margin:0 0 6px}
+.preco{display:flex;align-items:baseline;gap:10px;margin:22px 0 14px}
+.preco strong{font-family:Georgia,serif;font-size:2.6rem;color:var(--navy)}
+.preco span{color:var(--cinza)}
+.capa{max-width:380px;margin:auto;border-radius:6px;box-shadow:0 24px 50px rgba(29,42,68,.28);transform:rotate(-1.5deg)}
+.numeros{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-28px;position:relative}
+.numeros div{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:18px 20px;box-shadow:0 10px 26px rgba(29,42,68,.07)}
+.numeros b{display:block;font-family:Georgia,serif;font-size:1.6rem;color:var(--navy)}
+.numeros span{color:var(--cinza);font-size:.95rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+.card{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:22px}
+.card h3{font-size:1.2rem;margin:0 0 6px}.card p{margin:0;color:var(--cinza)}
+.exemplo{background:#fff;border:1px solid var(--linha);border-left:5px solid var(--ocre);border-radius:12px;padding:22px 24px;margin-top:22px}
+.exemplo .p{font-family:Georgia,serif;font-size:1.12rem;color:var(--navy);margin:0 0 10px}
+.exemplo .r{margin:0;color:var(--cinza)}
+.passos{counter-reset:p;display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:26px;padding:0;list-style:none}
+.passos li{background:#fff;border:1px solid var(--linha);border-radius:12px;padding:18px 16px;font-size:.95rem}
+.passos li:before{counter-increment:p;content:counter(p);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;margin-bottom:10px}
+.passos b{display:block;color:var(--navy)}
+.indice{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;margin:22px 0 0;padding:0;list-style:none}
+.indice li{border-bottom:1px dotted #cbd5e1;padding:8px 0}
+.indice li span{color:var(--ocre);font-weight:700;margin-right:8px}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.pagina{border-radius:6px;box-shadow:0 18px 40px rgba(29,42,68,.18);max-width:430px;margin:auto}
+.lista{padding-left:20px}.lista li{margin-bottom:8px}
+.publico{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}
+.publico div{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:22px}
+.publico h3{margin:0 0 8px;font-size:1.15rem}
+.oferta{background:var(--navy);color:#e5e7eb}
+.oferta h2{color:#fff}
+.oferta-box{display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:center}
+.oferta ul{padding-left:20px}.oferta li{margin-bottom:6px}
+.oferta .preco strong{color:#fff}.oferta .preco span,.oferta .micro{color:#cbd5e1}
+.faq details{background:#fff;border:1px solid var(--linha);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:700;color:var(--navy)}
+.faq details p{margin:10px 0 0;color:var(--cinza)}
+footer{background:#fff;border-top:1px solid var(--linha);padding:28px 0 96px;text-align:center;color:var(--cinza);font-size:.9rem}
+.barra{display:none}
+@media(max-width:900px){
+ .hero{padding-top:36px}
+ .hero-grid{grid-template-columns:1fr;grid-template-areas:"intro" "media" "acao";row-gap:24px}
+ .capa{max-width:300px}
+ .numeros,.cards,.publico{grid-template-columns:1fr}
+ .passos{grid-template-columns:1fr 1fr}
+ .indice,.duas,.oferta-box{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+ body{font-size:16px}.wrap{width:calc(100% - 28px)}section{padding:52px 0}
+ .btn{width:100%}.passos{grid-template-columns:1fr}
+ .barra{position:fixed;z-index:20;left:10px;right:10px;bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 10px 10px 16px;background:rgba(255,255,255,.97);border:1px solid var(--linha);border-radius:16px;box-shadow:0 10px 30px rgba(20,30,50,.22)}
+ .barra b{color:var(--navy)}.barra .btn{width:auto;min-height:44px;padding:0 14px;font-size:.85rem}
+}
+</style>
+</head>
+<body>
+<div class="topo">Guia em PDF · Página Virada · acesso logo após o pagamento</div>
+
+<header class="hero">
+ <div class="wrap hero-grid">
+  <div class="intro">
+   <span class="eyebrow">Guia para docentes · Edição 2.0</span>
+   <h1>Professor com IA</h1>
+   <p class="sub">Planeje aulas, prepare avaliações e adapte atividades com a ajuda da inteligência artificial.</p>
+  </div>
+  <div class="media">
+   <img class="capa" src="assets/capa-professor-com-ia.jpg" alt="Capa do guia Professor com IA, edição 2.0" width="909" height="1287">
+  </div>
+  <div class="acao">
+   <p class="lead">Use o ChatGPT e outras ferramentas para criar rascunhos e aprenda a revisá-los com base na BNCC e nas necessidades da sua turma. A IA ajuda; quem decide é você.</p>
+   <div class="preco"><strong>R$ 27,90</strong><span>pagamento único</span></div>
+   <a class="btn js-checkout" href="https://hub-vendas-production.up.railway.app/p/professor-com-ia#checkout">Quero o guia por R$ 27,90</a>
+   <p class="micro">Pix ou cartão · PDF de 36 páginas · 7 dias para pedir reembolso</p>
+  </div>
+ </div>
+</header>
+
+<div class="wrap numeros">
+ <div><b>25 prompts</b><span>comentados, mais 1 prompt de configuração</span></div>
+ <div><b>6 casos completos</b><span>pedido, resposta da IA, revisão e versão final</span></div>
+ <div><b>Todas as disciplinas</b><span>com ênfase em Língua Portuguesa e Literatura</span></div>
+</div>
+
+<section>
+ <div class="wrap">
+  <span class="eyebrow">Da ideia à atividade em sala</span>
+  <h2>Três tarefas em que a IA pode ajudar</h2>
+  <div class="cards">
+   <div class="card"><h3>Planejamento de aulas</h3><p>Peça um roteiro a partir da série, do conteúdo e de um objetivo de aprendizagem, com tempo para cada etapa.</p></div>
+   <div class="card"><h3>Avaliações</h3><p>Elabore questões, gabaritos e critérios de correção para revisar antes de aplicar.</p></div>
+   <div class="card"><h3>Adaptação de atividades</h3><p>Peça variações de linguagem e formato adequadas ao contexto da turma e de cada estudante.</p></div>
+  </div>
+  <div class="exemplo">
+   <span class="eyebrow">Experimente com um prompt</span>
+   <p class="p">“Crie uma atividade para o 8º ano sobre ponto de vista do narrador. Sugira três perguntas que peçam aos alunos evidências do texto.”</p>
+   <p class="r">Depois, confira se as perguntas podem ser respondidas com o trecho escolhido e se o nível de dificuldade serve à turma. O guia mostra como fazer essa revisão.</p>
+  </div>
+ </div>
+</section>
+
+<section style="background:#fff">
+ <div class="wrap">
+  <span class="eyebrow">O método</span>
+  <h2>Do pedido à atividade revisada, em cinco passos</h2>
+  <p class="lead">O mesmo roteiro vale para qualquer disciplina e qualquer ferramenta de conversa.</p>
+  <ol class="passos">
+   <li><b>Contexto</b>Turma, tempo, recursos e objetivo.</li>
+   <li><b>Rascunho</b>Uma primeira versão em formato definido.</li>
+   <li><b>Verificação</b>Fatos, contas e citações conferidos.</li>
+   <li><b>Checagem da BNCC</b>O código existe e a atividade trabalha aquela habilidade.</li>
+   <li><b>Adaptação</b>Vocabulário, tempo e dificuldade ajustados à sua turma.</li>
+  </ol>
+ </div>
+</section>
+
+<section>
+ <div class="wrap duas">
+  <div>
+   <span class="eyebrow">Casos completos</span>
+   <h2>Veja a revisão acontecendo</h2>
+   <p>Em seis casos, o guia mostra o pedido feito, uma resposta típica da IA, os erros que o professor encontrou e a versão que foi para a turma. As respostas da IA são exemplos escritos para o guia, com os tipos de erro que essas ferramentas costumam cometer.</p>
+   <ul class="lista">
+    <li>Foco narrativo no 8º ano, com plano de aula de 50 minutos.</li>
+    <li><i>Dom Casmurro</i> no Ensino Médio: questão discursiva, rubrica e correção de uma resposta.</li>
+    <li>Planejamento de artigo de opinião no 9º ano.</li>
+    <li>Adaptação de leitura no 5º ano.</li>
+    <li>Questões de porcentagem no 7º ano, com gabarito comentado.</li>
+    <li>Parecer descritivo e comunicado à família.</li>
+   </ul>
+  </div>
+  <img class="pagina" src="assets/pagina-caso-dom-casmurro.jpg" alt="Página do guia com o caso sobre Dom Casmurro: resposta da IA, revisão do professor e versão final" width="662" height="936" loading="lazy">
+ </div>
+</section>
+
+<section style="background:#fff">
+ <div class="wrap">
+  <span class="eyebrow">O que está no guia</span>
+  <h2>Um PDF, com tudo dentro</h2>
+  <p class="lead">Os capítulos sobre inclusão e sobre pareceres fazem parte do próprio guia; não são arquivos separados.</p>
+  <ul class="indice">
+   <li><span>1</span>Uso responsável da IA na escola</li>
+   <li><span>2</span>O método e o prompt de configuração</li>
+   <li><span>3</span>Planejamento de aulas</li>
+   <li><span>4</span>Língua Portuguesa e Literatura</li>
+   <li><span>5</span>Avaliações, gabaritos e rubricas</li>
+   <li><span>6</span>Inclusão e adaptação de atividades</li>
+   <li><span>7</span>Pareceres e comunicação com as famílias</li>
+   <li><span>8</span>Seis casos completos</li>
+   <li><span>9</span>Ferramentas: o que existe e o que conferir</li>
+   <li><span>A</span>Checklist de revisão, como conferir a BNCC e índice de prompts</li>
+  </ul>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <span class="eyebrow">Para quem é</span>
+  <h2>Feito para quem quer usar a IA com critério</h2>
+  <div class="publico">
+   <div><h3>É para você se</h3><ul class="lista"><li>dá aulas na educação básica, em qualquer disciplina;</li><li>quer usar a IA para ganhar um ponto de partida, sem abrir mão da revisão;</li><li>quer exemplos concretos de Língua Portuguesa e Literatura.</li></ul></div>
+   <div><h3>Não é para você se</h3><ul class="lista"><li>procura material pronto para aplicar sem ler;</li><li>espera que a IA corrija ou avalie os alunos sozinha;</li><li>busca um curso em vídeo: o guia é um PDF.</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="oferta" id="comprar">
+ <div class="wrap oferta-box">
+  <div>
+   <h2>Professor com IA · Edição 2.0</h2>
+   <ul>
+    <li>PDF de 36 páginas, para ler na tela ou imprimir.</li>
+    <li>25 prompts comentados e 1 prompt de configuração.</li>
+    <li>6 casos completos com revisão do professor.</li>
+    <li>Checklist de revisão e roteiro para conferir habilidades da BNCC.</li>
+    <li>Licença de uso individual.</li>
+   </ul>
+  </div>
+  <div>
+   <div class="preco"><strong>R$ 27,90</strong><span>pagamento único</span></div>
+   <a class="btn js-checkout" href="https://hub-vendas-production.up.railway.app/p/professor-com-ia#checkout">Quero o guia por R$ 27,90</a>
+   <p class="micro">Pagamento pelo Mercado Pago, com Pix ou cartão. O link para baixar aparece na tela e chega por e-mail.</p>
+  </div>
+ </div>
+</section>
+
+<section class="faq">
+ <div class="wrap">
+  <h2>Perguntas frequentes</h2>
+  <details><summary>Preciso pagar alguma ferramenta de IA?</summary><p>Não é obrigatório. Os prompts funcionam nas versões sem pagamento de ferramentas como ChatGPT, Gemini e Copilot, que têm limites de uso. Planos e limites mudam; o guia indica o que conferir.</p></details>
+  <details><summary>Os códigos da BNCC vêm prontos?</summary><p>O guia ensina a informar o código e o texto oficial da habilidade no pedido e a conferir no documento do MEC. Os exemplos usam habilidades conferidas, mas a escolha da habilidade da sua aula é sua.</p></details>
+  <details><summary>Serve para a minha disciplina?</summary><p>Sim. Os prompts de planejamento, avaliação, inclusão e comunicação valem para todas as disciplinas. Há mais exemplos de Língua Portuguesa e Literatura, e também de Matemática, História e anos iniciais.</p></details>
+  <details><summary>Como recebo o guia?</summary><p>Depois da confirmação do pagamento, o link para baixar o PDF aparece na tela e é enviado ao e-mail informado na compra.</p></details>
+  <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias, a partir da compra, para pedir o reembolso.</p></details>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap"><strong>Professor com IA</strong> · Página Virada · © 2026<br><a href="/legal/privacidade.html">Política de Privacidade</a> · <a href="/legal/termos.html">Termos de Uso</a></div>
+</footer>
+<div class="barra"><div><small>Professor com IA</small><br><b>R$ 27,90</b></div><a class="btn js-checkout" href="https://hub-vendas-production.up.railway.app/p/professor-com-ia#checkout">Quero o guia</a></div>
+
+<script>
+// Repasse de UTM da landing para o checkout do Hub (padrão usado em /redacao/ e /kitretafinal/)
+(function(){
+  var params = new URLSearchParams(window.location.search);
+  var allowed = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck'];
+  document.querySelectorAll('a.js-checkout').forEach(function(link){
+    var url = new URL(link.href);
+    allowed.forEach(function(key){ if(params.has(key)) url.searchParams.set(key, params.get(key)); });
+    link.href = url.toString();
+  });
+})();
+</script>
+</body>
+</html>
