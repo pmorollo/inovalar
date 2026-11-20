@@ -318,6 +318,13 @@
       .footer-main { display: block; }
       .footer-links { justify-content: flex-start; margin-top: 24px; }
     }
+  
+    .p19-vsl { width: 100%; min-width: 0; text-align: center; }
+    .p19-vsl video { display: block; width: 100%; aspect-ratio: 16 / 9; margin-bottom: 1rem; border-radius: 12px; background: #141519; }
+    @media (max-width: 760px) {
+      .p19-vsl { grid-row: 2; }
+    }
+
   </style>
 </head>
 <body>
@@ -384,14 +391,12 @@
           <p class="microcopy">Produto digital • Pagamento único • Bônus dos 12 Arquétipos incluído</p>
         </div>
 
-        <div class="cover-stage" aria-label="Representação visual da capa do e-book">
-          <div class="cover-glow"></div>
-          <div class="cover">
-            <span class="cover-kicker">Caderno de observação pessoal</span>
-            <h2 class="serif">O Diário<br>das<br>Sombras</h2>
-            <p>Perguntas e exercícios de escrita para atravessar o que pede atenção.</p>
-            <div class="cover-orbit" aria-hidden="true"></div>
-          </div>
+        <div class="p19-vsl">
+          <video controls playsinline preload="metadata" aria-label="Apresentação de O Diário das Sombras">
+            <source src="assets/vsl-diario-das-sombras.mp4" type="video/mp4">
+            Seu navegador não consegue reproduzir este vídeo.
+          </video>
+          <a class="btn btn-primary" href="#oferta">Ver a oferta do e-book <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
@@ -405,6 +410,15 @@
         <div class="manifesto-copy">
           <p>Escrever pode ser uma forma simples de desacelerar, organizar pensamentos e notar o que costuma passar despercebido. O Diário das Sombras foi pensado como um ponto de partida para uma conversa mais honesta com você mesmo.</p>
           <p>Você escolhe o ritmo, as perguntas e a profundidade do percurso. Não há desempenho a alcançar: há espaço para observar, registrar e voltar quando quiser.</p>
+          <div class="cover-stage" aria-label="Representação visual da capa do e-book">
+          <div class="cover-glow"></div>
+          <div class="cover">
+            <span class="cover-kicker">Caderno de observação pessoal</span>
+            <h2 class="serif">O Diário<br>das<br>Sombras</h2>
+            <p>Perguntas e exercícios de escrita para atravessar o que pede atenção.</p>
+            <div class="cover-orbit" aria-hidden="true"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
