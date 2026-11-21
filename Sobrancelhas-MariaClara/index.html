@@ -496,6 +496,11 @@
         height: 300px;
       }
     }
+  
+    .p4-hero-video { width:min(100%, 290px); margin-inline:auto; text-align:center; }
+    .p4-hero-video video { display:block; width:100%; height:auto; aspect-ratio:9/16; border-radius:16px; background:#2c1922; }
+    .p4-hero-video .btn { margin-top:14px; }
+    .p4-video-rating { margin-top:14px; }
   </style>
 </head>
 <body>
@@ -521,9 +526,12 @@
         </div>
 
         <div class="hero-media">
-          <div class="hero-image-card">
-            <img src="sobrancelhas_02.jpg" alt="Imagem ilustrativa: cliente após o design de sobrancelhas">
-            <div class="floating-card">
+          <div class="p4-hero-video">
+            <video controls playsinline preload="none" width="720" height="1280" poster="sobrancelhas-video-poster.jpg" aria-label="Apresentação do curso Sobrancelhas Perfeitas">
+              <source src="sobrancelhas-39s.mp4" type="video/mp4">
+            </video>
+            <a href="https://go.hotmart.com/D106435551O?dp=1" class="btn">CONHEÇA O MÉTODO NA HOTMART</a>
+            <div class="p4-video-rating">
               <div class="stars">★★★★★</div>
               <div>
                 <strong>Nota 4,9 na Hotmart</strong>
